@@ -55,7 +55,7 @@ listRouter.route('/')
   });
 
 
-listRouter.route('/id')
+listRouter.route('/:id')
   .get((req, res) => {
     const { id } = req.params;
   const list = lists.find(lis => li.id == id);
